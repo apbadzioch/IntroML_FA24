@@ -1,0 +1,57 @@
+# OS-specific
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code settings
+.vscode/
+.vscode-server/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Dev Containers
+.devcontainer/
+
+# Docker related files
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# IDE-specific files
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# GitHub-specific files
+
+# Ignore GitHub Actions workflow logs
+.github/workflows/
+
+# Ignore GitHub Pages output
+.github/pages
+
+# Ignore GitHub Actions temporary files
+**/actions-runs/
+
+
+
+
+
+
+
+
+
+
+
