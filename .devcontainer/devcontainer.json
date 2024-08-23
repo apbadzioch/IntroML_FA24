@@ -5,20 +5,23 @@
 	"build": { 
 		"context": "..",
 		"dockerfile": "Dockerfile"
+	},
+	"poostCreateCommand": "python -m ipykernel install --user --name base --display-name '(base)Python 3.12'",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"jupyter.jupyterSeverURI": "local",
+				"jupyter.notebookFileRoot": "${workspaceFolder}",
+				"python.dataScience.jupyterServerKernelSpec": {
+					"name": "base",
+					"display-name": "(base)Python 3.12"
+				}
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter"
+			]
+		}
 	}
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "python --version",
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+				
 }
