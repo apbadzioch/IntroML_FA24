@@ -6,7 +6,7 @@
 		"context": "..",
 		"dockerfile": "Dockerfile"
 	},
-	"postCreateCommand": "python -m ipykernel install --user --name base --display-name '(base)Python 3.12'",
+	"postCreateCommand": "python -m ipykernel install --user --name base --display-name '(base)Python 3.12.4'",
 	"customizations": {
 		"vscode": {
 			"settings": {
@@ -14,8 +14,8 @@
 				"jupyter.jupyterSeverURI": "local",
 				"jupyter.notebookFileRoot": "${workspaceFolder}",
 				"python.dataScience.jupyterServerKernelSpec": {
-					"name": "base",
-					"display-name": "(base)Python 3.12"
+					"name": "base-3.12.4",
+					"display-name": "(base)Python 3.12.4"
 				},
 				"python.pythonPath": "/opt/conda/bin/python"
 			},
