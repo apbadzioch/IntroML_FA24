@@ -10,16 +10,19 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
+				"workbench.startupEditor": "none",
 				"jupyter.jupyterSeverURI": "local",
 				"jupyter.notebookFileRoot": "${workspaceFolder}",
 				"python.dataScience.jupyterServerKernelSpec": {
 					"name": "base",
 					"display-name": "(base)Python 3.12"
-				}
+				},
+				"python.pythonPath": "/opt/conda/bin/python"
 			},
 			"extensions": [
 				"ms-python.python",
-				"ms-toolsai.jupyter"
+				"ms-toolsai.jupyter",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	}
